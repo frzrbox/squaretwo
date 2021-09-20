@@ -11,7 +11,9 @@
   </style>
 
   {% for stylesheet in critical %}
-    {% include stylesheet %}
+    <style>
+      {% include stylesheet %}
+    </style>
   {% endfor %}
 
   {% for stylesheet in stylesheets %}
