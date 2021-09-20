@@ -1,0 +1,23 @@
+@define-mixin flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@define-mixin flex-column
+  display: flex
+  flex-direction: column
+
+@define-mixin columns $count, $width, $gap
+  column-count: $count
+  column-width: $width
+  column-gap: $gap
+
+@define-mixin grid-columns $columns, $gap
+  display: grid
+  grid-gap: $gap
+  grid-template-columns: repeat($columns, 1fr)
+
+@define-mixin grid-auto $fill, $min-content, $max-content, $gap
+  display: grid
+  grid-gap: $gap
+  grid-template-columns: repeat($fill, minmax($min-content, $max-content))
