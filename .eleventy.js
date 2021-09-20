@@ -20,7 +20,7 @@ module.exports = (config) => {
 
   // Reload the browser if external changes are made
   config.setBrowserSyncConfig({
-    files: ['./sass', './ts', './assets'],
+    files: ['./css', './ts', './assets'],
   });
 
   // Set YAML as default content file
