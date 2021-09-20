@@ -11,7 +11,7 @@
     "esbuild:watch": "esbuild ./ts/*.ts --outdir=dist/js --watch",
     "esbuild:build": "esbuild ./ts/*.ts --outdir=dist/js",
     "styles:watch": "postcss --watch css/*.sss --dir dist/css --ext css -c postcss.config.js",
-    "styles:build": "postcss input.sss -p sugarss -o output.css -m postcss.config.js"
+    "styles:build": "postcss css/*.sss --dir dist/css --ext css -c postcss.config.js"
   },
   "author": "frzrbox",
   "license": "MIT",
