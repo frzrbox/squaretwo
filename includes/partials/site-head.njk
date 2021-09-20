@@ -6,12 +6,13 @@
     {% if meta.title %}{{meta.title}} |{% endif %}{{site.title}}
   </title>
 
-  {# <style>
-    {% include ./css/critical.css %}
+  <style>
+    {% include '../css/critical.css' %}
   </style>
+
   {% for stylesheet in critical %}
     {% include stylesheet %}
-  {% endfor %} #}
+  {% endfor %}
 
   {% for stylesheet in stylesheets %}
     <link href="{{stylesheet}}" rel="stylesheet">
