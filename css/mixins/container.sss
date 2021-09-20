@@ -1,0 +1,15 @@
+@define-mixin container
+  @mixin push-auto
+  width: var(--default-width)
+
+@define-mixin default
+  @mixin container
+  max-width: var(--container-default)
+
+@define-mixin small
+  @mixin container
+  max-width: var(--container-small)
+
+@define-mixin medium
+  @mixin container
+  max-width: var(--container-medium)
