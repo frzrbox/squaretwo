@@ -1,0 +1,10 @@
+{% macro render(components) %}
+  {% for component in components %}
+    {% if component.type == 'text-block' %}
+      {% include '../components/text-block.njk' %}
+    {% endif %}
+    {% if component.type == 'large-image'%}
+      {% include '../components/large-image.njk' %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}

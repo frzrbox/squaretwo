@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "./partials/site-head.njk" %}
+  <body>
+    {% include './partials/header.njk' %}
+
+    <main {% if template %}class="{{template}}" data-template="{{template}}"{% endif %}>
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include './partials/footer.njk' %}
+
+    {% for script in scripts %}
+      <script src="{{script}}" type="module"></script>
+    {% endfor %}
+  </body>
+</html>

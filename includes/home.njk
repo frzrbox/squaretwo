@@ -1,0 +1,6 @@
+{% extends 'base.njk' %}
+{% import './macros/page-components.njk' as pageComponents %}
+
+{% block content %}
+  {{pageComponents.render(home.components)}}
+{% endblock %}

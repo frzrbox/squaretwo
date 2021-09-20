@@ -1,0 +1,11 @@
+components:
+  - type: text-block
+    title: this is a text block
+    body: this is the content for the text block
+    links:
+      - label: link 1
+        url: /
+  - type: large-image
+    image:
+      url: /assets/images/image-1.png
+      alt: Image 1 alt
