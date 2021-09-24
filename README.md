@@ -7,4 +7,4 @@
 - Typescript
 - Inlined critical styles
 - ES Build
-- SASS
+- PostCSS
