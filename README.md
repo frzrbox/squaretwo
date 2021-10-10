@@ -1,4 +1,4 @@
-# Frzrbase
+# Square Two
 
 11ty starter for projects optimized for the web.
 
